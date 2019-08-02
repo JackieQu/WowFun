@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113CBD98206665188385AEBE /* Pods_WowFunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFC9974089CEE74ABA6FB82 /* Pods_WowFunUITests.framework */; };
+		1186FF134B4B120697934665 /* Pods_WowFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */; };
+		28D4B92D22F1A78900EAC966 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B92C22F1A78900EAC966 /* AppDelegate.m */; };
+		28D4B93022F1A78900EAC966 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B92F22F1A78900EAC966 /* ViewController.m */; };
+		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
+		28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B93422F1A78900EAC966 /* WowFun.xcdatamodeld */; };
+		28D4B93822F1A78900EAC966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93722F1A78900EAC966 /* Assets.xcassets */; };
+		28D4B93B22F1A78900EAC966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93922F1A78900EAC966 /* LaunchScreen.storyboard */; };
+		28D4B93E22F1A78900EAC966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B93D22F1A78900EAC966 /* main.m */; };
+		28D4B94822F1A78900EAC966 /* WowFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B94722F1A78900EAC966 /* WowFunTests.m */; };
+		28D4B95322F1A78A00EAC966 /* WowFunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B95222F1A78A00EAC966 /* WowFunUITests.m */; };
+		5F52EC4D926E12A1BFCFC435 /* Pods_WowFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A840D6DC0C74FB56CB04F5D7 /* Pods_WowFunTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28D4B94422F1A78900EAC966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4B92022F1A78900EAC966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D4B92722F1A78900EAC966;
+			remoteInfo = WowFun;
+		};
+		28D4B94F22F1A78A00EAC966 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D4B92022F1A78900EAC966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28D4B92722F1A78900EAC966;
+			remoteInfo = WowFun;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4B92822F1A78900EAC966 /* WowFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4B92B22F1A78900EAC966 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28D4B92C22F1A78900EAC966 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28D4B92E22F1A78900EAC966 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		28D4B92F22F1A78900EAC966 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28D4B93222F1A78900EAC966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28D4B93522F1A78900EAC966 /* WowFun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WowFun.xcdatamodel; sourceTree = "<group>"; };
+		28D4B93722F1A78900EAC966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28D4B93A22F1A78900EAC966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28D4B93C22F1A78900EAC966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D4B93D22F1A78900EAC966 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28D4B94322F1A78900EAC966 /* WowFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4B94722F1A78900EAC966 /* WowFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WowFunTests.m; sourceTree = "<group>"; };
+		28D4B94922F1A78900EAC966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D4B94E22F1A78900EAC966 /* WowFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28D4B95222F1A78A00EAC966 /* WowFunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WowFunUITests.m; sourceTree = "<group>"; };
+		28D4B95422F1A78A00EAC966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C2BB9E007DFF152C94E0A9 /* Pods-WowFunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFunUITests.debug.xcconfig"; path = "Target Support Files/Pods-WowFunUITests/Pods-WowFunUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CFC9974089CEE74ABA6FB82 /* Pods_WowFunUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowFunUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A840D6DC0C74FB56CB04F5D7 /* Pods_WowFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B781B5AD18C048FAF0048EC7 /* Pods-WowFunUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFunUITests.release.xcconfig"; path = "Target Support Files/Pods-WowFunUITests/Pods-WowFunUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9F78B3763FCD2EEDEA4E529 /* Pods-WowFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFun.debug.xcconfig"; path = "Target Support Files/Pods-WowFun/Pods-WowFun.debug.xcconfig"; sourceTree = "<group>"; };
+		C71E02CBCDA30F87B023B323 /* Pods-WowFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFun.release.xcconfig"; path = "Target Support Files/Pods-WowFun/Pods-WowFun.release.xcconfig"; sourceTree = "<group>"; };
+		CF9390582A91562BED18D178 /* Pods-WowFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFunTests.debug.xcconfig"; path = "Target Support Files/Pods-WowFunTests/Pods-WowFunTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F80AE460E252D8F46E43760D /* Pods-WowFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowFunTests.release.xcconfig"; path = "Target Support Files/Pods-WowFunTests/Pods-WowFunTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28D4B92522F1A78900EAC966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1186FF134B4B120697934665 /* Pods_WowFun.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B94022F1A78900EAC966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F52EC4D926E12A1BFCFC435 /* Pods_WowFunTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B94B22F1A78900EAC966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113CBD98206665188385AEBE /* Pods_WowFunUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28D4B91F22F1A78900EAC966 = {
+			isa = PBXGroup;
+			children = (
+				28D4B92A22F1A78900EAC966 /* WowFun */,
+				28D4B94622F1A78900EAC966 /* WowFunTests */,
+				28D4B95122F1A78A00EAC966 /* WowFunUITests */,
+				28D4B92922F1A78900EAC966 /* Products */,
+				4F09E57C17CB33A93F85DB6A /* Pods */,
+				937C0CB9D14C53947A34B669 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28D4B92922F1A78900EAC966 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28D4B92822F1A78900EAC966 /* WowFun.app */,
+				28D4B94322F1A78900EAC966 /* WowFunTests.xctest */,
+				28D4B94E22F1A78900EAC966 /* WowFunUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28D4B92A22F1A78900EAC966 /* WowFun */ = {
+			isa = PBXGroup;
+			children = (
+				28D4B92B22F1A78900EAC966 /* AppDelegate.h */,
+				28D4B92C22F1A78900EAC966 /* AppDelegate.m */,
+				28D4B92E22F1A78900EAC966 /* ViewController.h */,
+				28D4B92F22F1A78900EAC966 /* ViewController.m */,
+				28D4B93122F1A78900EAC966 /* Main.storyboard */,
+				28D4B93722F1A78900EAC966 /* Assets.xcassets */,
+				28D4B93922F1A78900EAC966 /* LaunchScreen.storyboard */,
+				28D4B93C22F1A78900EAC966 /* Info.plist */,
+				28D4B93D22F1A78900EAC966 /* main.m */,
+				28D4B93422F1A78900EAC966 /* WowFun.xcdatamodeld */,
+			);
+			path = WowFun;
+			sourceTree = "<group>";
+		};
+		28D4B94622F1A78900EAC966 /* WowFunTests */ = {
+			isa = PBXGroup;
+			children = (
+				28D4B94722F1A78900EAC966 /* WowFunTests.m */,
+				28D4B94922F1A78900EAC966 /* Info.plist */,
+			);
+			path = WowFunTests;
+			sourceTree = "<group>";
+		};
+		28D4B95122F1A78A00EAC966 /* WowFunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28D4B95222F1A78A00EAC966 /* WowFunUITests.m */,
+				28D4B95422F1A78A00EAC966 /* Info.plist */,
+			);
+			path = WowFunUITests;
+			sourceTree = "<group>";
+		};
+		4F09E57C17CB33A93F85DB6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9F78B3763FCD2EEDEA4E529 /* Pods-WowFun.debug.xcconfig */,
+				C71E02CBCDA30F87B023B323 /* Pods-WowFun.release.xcconfig */,
+				CF9390582A91562BED18D178 /* Pods-WowFunTests.debug.xcconfig */,
+				F80AE460E252D8F46E43760D /* Pods-WowFunTests.release.xcconfig */,
+				76C2BB9E007DFF152C94E0A9 /* Pods-WowFunUITests.debug.xcconfig */,
+				B781B5AD18C048FAF0048EC7 /* Pods-WowFunUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		937C0CB9D14C53947A34B669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */,
+				A840D6DC0C74FB56CB04F5D7 /* Pods_WowFunTests.framework */,
+				8CFC9974089CEE74ABA6FB82 /* Pods_WowFunUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28D4B92722F1A78900EAC966 /* WowFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4B95722F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFun" */;
+			buildPhases = (
+				C25B88E0B71C115BDA0F8005 /* [CP] Check Pods Manifest.lock */,
+				28D4B92422F1A78900EAC966 /* Sources */,
+				28D4B92522F1A78900EAC966 /* Frameworks */,
+				28D4B92622F1A78900EAC966 /* Resources */,
+				9E57801F1F0A44D9A39CDCD8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WowFun;
+			productName = WowFun;
+			productReference = 28D4B92822F1A78900EAC966 /* WowFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28D4B94222F1A78900EAC966 /* WowFunTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4B95A22F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFunTests" */;
+			buildPhases = (
+				97394F16495592CA72C1370D /* [CP] Check Pods Manifest.lock */,
+				28D4B93F22F1A78900EAC966 /* Sources */,
+				28D4B94022F1A78900EAC966 /* Frameworks */,
+				28D4B94122F1A78900EAC966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D4B94522F1A78900EAC966 /* PBXTargetDependency */,
+			);
+			name = WowFunTests;
+			productName = WowFunTests;
+			productReference = 28D4B94322F1A78900EAC966 /* WowFunTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28D4B94D22F1A78900EAC966 /* WowFunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D4B95D22F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFunUITests" */;
+			buildPhases = (
+				D19CD9DF3A33DA4AF2AF27DC /* [CP] Check Pods Manifest.lock */,
+				28D4B94A22F1A78900EAC966 /* Sources */,
+				28D4B94B22F1A78900EAC966 /* Frameworks */,
+				28D4B94C22F1A78900EAC966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28D4B95022F1A78A00EAC966 /* PBXTargetDependency */,
+			);
+			name = WowFunUITests;
+			productName = WowFunUITests;
+			productReference = 28D4B94E22F1A78900EAC966 /* WowFunUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28D4B92022F1A78900EAC966 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = WowFun;
+				TargetAttributes = {
+					28D4B92722F1A78900EAC966 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					28D4B94222F1A78900EAC966 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 28D4B92722F1A78900EAC966;
+					};
+					28D4B94D22F1A78900EAC966 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 28D4B92722F1A78900EAC966;
+					};
+				};
+			};
+			buildConfigurationList = 28D4B92322F1A78900EAC966 /* Build configuration list for PBXProject "WowFun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28D4B91F22F1A78900EAC966;
+			productRefGroup = 28D4B92922F1A78900EAC966 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28D4B92722F1A78900EAC966 /* WowFun */,
+				28D4B94222F1A78900EAC966 /* WowFunTests */,
+				28D4B94D22F1A78900EAC966 /* WowFunUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28D4B92622F1A78900EAC966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4B93B22F1A78900EAC966 /* LaunchScreen.storyboard in Resources */,
+				28D4B93822F1A78900EAC966 /* Assets.xcassets in Resources */,
+				28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B94122F1A78900EAC966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B94C22F1A78900EAC966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97394F16495592CA72C1370D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowFunTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E57801F1F0A44D9A39CDCD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowFun/Pods-WowFun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WowFun/Pods-WowFun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WowFun/Pods-WowFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C25B88E0B71C115BDA0F8005 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowFun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D19CD9DF3A33DA4AF2AF27DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WowFunUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28D4B92422F1A78900EAC966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4B93022F1A78900EAC966 /* ViewController.m in Sources */,
+				28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */,
+				28D4B93E22F1A78900EAC966 /* main.m in Sources */,
+				28D4B92D22F1A78900EAC966 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B93F22F1A78900EAC966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4B94822F1A78900EAC966 /* WowFunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28D4B94A22F1A78900EAC966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D4B95322F1A78A00EAC966 /* WowFunUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28D4B94522F1A78900EAC966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D4B92722F1A78900EAC966 /* WowFun */;
+			targetProxy = 28D4B94422F1A78900EAC966 /* PBXContainerItemProxy */;
+		};
+		28D4B95022F1A78A00EAC966 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28D4B92722F1A78900EAC966 /* WowFun */;
+			targetProxy = 28D4B94F22F1A78A00EAC966 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28D4B93122F1A78900EAC966 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28D4B93222F1A78900EAC966 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28D4B93922F1A78900EAC966 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28D4B93A22F1A78900EAC966 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28D4B95522F1A78A00EAC966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28D4B95622F1A78A00EAC966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28D4B95822F1A78A00EAC966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F78B3763FCD2EEDEA4E529 /* Pods-WowFun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28D4B95922F1A78A00EAC966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71E02CBCDA30F87B023B323 /* Pods-WowFun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28D4B95B22F1A78A00EAC966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9390582A91562BED18D178 /* Pods-WowFunTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowFun.app/WowFun";
+			};
+			name = Debug;
+		};
+		28D4B95C22F1A78A00EAC966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80AE460E252D8F46E43760D /* Pods-WowFunTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowFun.app/WowFun";
+			};
+			name = Release;
+		};
+		28D4B95E22F1A78A00EAC966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C2BB9E007DFF152C94E0A9 /* Pods-WowFunUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WowFun;
+			};
+			name = Debug;
+		};
+		28D4B95F22F1A78A00EAC966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B781B5AD18C048FAF0048EC7 /* Pods-WowFunUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				INFOPLIST_FILE = WowFunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WowFun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28D4B92322F1A78900EAC966 /* Build configuration list for PBXProject "WowFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4B95522F1A78A00EAC966 /* Debug */,
+				28D4B95622F1A78A00EAC966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4B95722F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4B95822F1A78A00EAC966 /* Debug */,
+				28D4B95922F1A78A00EAC966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4B95A22F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFunTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4B95B22F1A78A00EAC966 /* Debug */,
+				28D4B95C22F1A78A00EAC966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28D4B95D22F1A78A00EAC966 /* Build configuration list for PBXNativeTarget "WowFunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28D4B95E22F1A78A00EAC966 /* Debug */,
+				28D4B95F22F1A78A00EAC966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28D4B93422F1A78900EAC966 /* WowFun.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28D4B93522F1A78900EAC966 /* WowFun.xcdatamodel */,
+			);
+			currentVersion = 28D4B93522F1A78900EAC966 /* WowFun.xcdatamodel */;
+			path = WowFun.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 28D4B92022F1A78900EAC966 /* Project object */;
+}

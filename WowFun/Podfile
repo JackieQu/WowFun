@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'WowFun' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WowFun
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'Masonry'
+  pod 'FMDB'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'SVProgressHUD'
+
+  target 'WowFunTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WowFunUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
