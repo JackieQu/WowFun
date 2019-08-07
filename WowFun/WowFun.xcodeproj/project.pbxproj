@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		113CBD98206665188385AEBE /* Pods_WowFunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFC9974089CEE74ABA6FB82 /* Pods_WowFunUITests.framework */; };
 		1186FF134B4B120697934665 /* Pods_WowFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */; };
-		28D4B92D22F1A78900EAC966 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B92C22F1A78900EAC966 /* AppDelegate.m */; };
-		28D4B93022F1A78900EAC966 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B92F22F1A78900EAC966 /* ViewController.m */; };
+		2883215522FA60A700CC7AF4 /* QPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883215422FA60A700CC7AF4 /* QPHomeViewController.m */; };
+		2883215822FA60B700CC7AF4 /* QPVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883215722FA60B700CC7AF4 /* QPVideoViewController.m */; };
+		2883215B22FA60D200CC7AF4 /* QPForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883215A22FA60D200CC7AF4 /* QPForumViewController.m */; };
+		2883215E22FA60E000CC7AF4 /* QPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883215D22FA60E000CC7AF4 /* QPProfileViewController.m */; };
+		2883216122FA610F00CC7AF4 /* QPBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216022FA610F00CC7AF4 /* QPBaseTabBarController.m */; };
+		2883216422FA62DD00CC7AF4 /* QPBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216322FA62DD00CC7AF4 /* QPBaseViewController.m */; };
+		2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216722FA678600CC7AF4 /* QPHTTPClient.m */; };
+		2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216A22FA9EA200CC7AF4 /* NSString+TimeFormat.m */; };
+		2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */; };
+		2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883217022FAD84800CC7AF4 /* QPTabBar.m */; };
+		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
+		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
 		28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B93422F1A78900EAC966 /* WowFun.xcdatamodeld */; };
 		28D4B93822F1A78900EAC966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93722F1A78900EAC966 /* Assets.xcassets */; };
 		28D4B93B22F1A78900EAC966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93922F1A78900EAC966 /* LaunchScreen.storyboard */; };
-		28D4B93E22F1A78900EAC966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B93D22F1A78900EAC966 /* main.m */; };
 		28D4B94822F1A78900EAC966 /* WowFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B94722F1A78900EAC966 /* WowFunTests.m */; };
 		28D4B95322F1A78A00EAC966 /* WowFunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D4B95222F1A78A00EAC966 /* WowFunUITests.m */; };
 		5F52EC4D926E12A1BFCFC435 /* Pods_WowFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A840D6DC0C74FB56CB04F5D7 /* Pods_WowFunTests.framework */; };
@@ -40,17 +49,36 @@
 
 /* Begin PBXFileReference section */
 		1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2883215322FA60A700CC7AF4 /* QPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QPHomeViewController.h; path = WowFun/Classes/Home/Handler/QPHomeViewController.h; sourceTree = SOURCE_ROOT; };
+		2883215422FA60A700CC7AF4 /* QPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QPHomeViewController.m; path = WowFun/Classes/Home/Handler/QPHomeViewController.m; sourceTree = SOURCE_ROOT; };
+		2883215622FA60B700CC7AF4 /* QPVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPVideoViewController.h; sourceTree = "<group>"; };
+		2883215722FA60B700CC7AF4 /* QPVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPVideoViewController.m; sourceTree = "<group>"; };
+		2883215922FA60D200CC7AF4 /* QPForumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPForumViewController.h; sourceTree = "<group>"; };
+		2883215A22FA60D200CC7AF4 /* QPForumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPForumViewController.m; sourceTree = "<group>"; };
+		2883215C22FA60E000CC7AF4 /* QPProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPProfileViewController.h; sourceTree = "<group>"; };
+		2883215D22FA60E000CC7AF4 /* QPProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPProfileViewController.m; sourceTree = "<group>"; };
+		2883215F22FA610F00CC7AF4 /* QPBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPBaseTabBarController.h; sourceTree = "<group>"; };
+		2883216022FA610F00CC7AF4 /* QPBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPBaseTabBarController.m; sourceTree = "<group>"; };
+		2883216222FA62DD00CC7AF4 /* QPBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPBaseViewController.h; sourceTree = "<group>"; };
+		2883216322FA62DD00CC7AF4 /* QPBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPBaseViewController.m; sourceTree = "<group>"; };
+		2883216522FA673A00CC7AF4 /* QPAPIConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPAPIConfig.h; sourceTree = "<group>"; };
+		2883216622FA678600CC7AF4 /* QPHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPHTTPClient.h; sourceTree = "<group>"; };
+		2883216722FA678600CC7AF4 /* QPHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPHTTPClient.m; sourceTree = "<group>"; };
+		2883216922FA9EA200CC7AF4 /* NSString+TimeFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TimeFormat.h"; sourceTree = "<group>"; };
+		2883216A22FA9EA200CC7AF4 /* NSString+TimeFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeFormat.m"; sourceTree = "<group>"; };
+		2883216C22FAD2CD00CC7AF4 /* QPBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPBaseNavigationController.h; sourceTree = "<group>"; };
+		2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPBaseNavigationController.m; sourceTree = "<group>"; };
+		2883216F22FAD84800CC7AF4 /* QPTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPTabBar.h; sourceTree = "<group>"; };
+		2883217022FAD84800CC7AF4 /* QPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPTabBar.m; sourceTree = "<group>"; };
+		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		28D4B92822F1A78900EAC966 /* WowFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D4B92B22F1A78900EAC966 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		28D4B92C22F1A78900EAC966 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28D4B92E22F1A78900EAC966 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		28D4B92F22F1A78900EAC966 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		28D4B93222F1A78900EAC966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28D4B93522F1A78900EAC966 /* WowFun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WowFun.xcdatamodel; sourceTree = "<group>"; };
 		28D4B93722F1A78900EAC966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28D4B93A22F1A78900EAC966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28D4B93C22F1A78900EAC966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28D4B93D22F1A78900EAC966 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28D4B94322F1A78900EAC966 /* WowFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D4B94722F1A78900EAC966 /* WowFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WowFunTests.m; sourceTree = "<group>"; };
 		28D4B94922F1A78900EAC966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +123,269 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28BD008622F81B9600980816 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28BD00A122F81B9600980816 /* Base */,
+				28BD008722F81B9600980816 /* Home */,
+				28BD008C22F81B9600980816 /* Video */,
+				28BD009622F81B9600980816 /* Forum */,
+				28BD009B22F81B9600980816 /* Profile */,
+				28BD009122F81B9600980816 /* Network */,
+				28BD00A622F81B9600980816 /* Tool */,
+				28BD00A022F81B9600980816 /* Lib */,
+				28BD009222F81B9600980816 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		28BD008722F81B9600980816 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				28BD008822F81B9600980816 /* Handler */,
+				28BD008922F81B9600980816 /* Controller */,
+				28BD008A22F81B9600980816 /* Model */,
+				28BD008B22F81B9600980816 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		28BD008822F81B9600980816 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		28BD008922F81B9600980816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2883215322FA60A700CC7AF4 /* QPHomeViewController.h */,
+				2883215422FA60A700CC7AF4 /* QPHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28BD008A22F81B9600980816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28BD008B22F81B9600980816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BD008C22F81B9600980816 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				28BD008D22F81B9600980816 /* Handler */,
+				28BD008E22F81B9600980816 /* Controller */,
+				28BD008F22F81B9600980816 /* Model */,
+				28BD009022F81B9600980816 /* View */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		28BD008D22F81B9600980816 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		28BD008E22F81B9600980816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2883215622FA60B700CC7AF4 /* QPVideoViewController.h */,
+				2883215722FA60B700CC7AF4 /* QPVideoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28BD008F22F81B9600980816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28BD009022F81B9600980816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BD009122F81B9600980816 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2883216522FA673A00CC7AF4 /* QPAPIConfig.h */,
+				2883216622FA678600CC7AF4 /* QPHTTPClient.h */,
+				2883216722FA678600CC7AF4 /* QPHTTPClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		28BD009222F81B9600980816 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				28BD009422F81B9600980816 /* main.m */,
+				28BD009322F81B9600980816 /* AppDelegate.h */,
+				28BD009522F81B9600980816 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		28BD009622F81B9600980816 /* Forum */ = {
+			isa = PBXGroup;
+			children = (
+				28BD009722F81B9600980816 /* Handler */,
+				28BD009822F81B9600980816 /* Controller */,
+				28BD009922F81B9600980816 /* Model */,
+				28BD009A22F81B9600980816 /* View */,
+			);
+			path = Forum;
+			sourceTree = "<group>";
+		};
+		28BD009722F81B9600980816 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		28BD009822F81B9600980816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2883215922FA60D200CC7AF4 /* QPForumViewController.h */,
+				2883215A22FA60D200CC7AF4 /* QPForumViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28BD009922F81B9600980816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28BD009A22F81B9600980816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BD009B22F81B9600980816 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				28BD009C22F81B9600980816 /* Handler */,
+				28BD009D22F81B9600980816 /* Controller */,
+				28BD009E22F81B9600980816 /* Model */,
+				28BD009F22F81B9600980816 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		28BD009C22F81B9600980816 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		28BD009D22F81B9600980816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2883215C22FA60E000CC7AF4 /* QPProfileViewController.h */,
+				2883215D22FA60E000CC7AF4 /* QPProfileViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28BD009E22F81B9600980816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28BD009F22F81B9600980816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BD00A022F81B9600980816 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		28BD00A122F81B9600980816 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				28BD00A222F81B9600980816 /* Handler */,
+				28BD00A322F81B9600980816 /* Controller */,
+				28BD00A422F81B9600980816 /* Model */,
+				28BD00A522F81B9600980816 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		28BD00A222F81B9600980816 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		28BD00A322F81B9600980816 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2883215F22FA610F00CC7AF4 /* QPBaseTabBarController.h */,
+				2883216022FA610F00CC7AF4 /* QPBaseTabBarController.m */,
+				2883216222FA62DD00CC7AF4 /* QPBaseViewController.h */,
+				2883216322FA62DD00CC7AF4 /* QPBaseViewController.m */,
+				2883216C22FAD2CD00CC7AF4 /* QPBaseNavigationController.h */,
+				2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28BD00A422F81B9600980816 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28BD00A522F81B9600980816 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2883216F22FAD84800CC7AF4 /* QPTabBar.h */,
+				2883217022FAD84800CC7AF4 /* QPTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28BD00A622F81B9600980816 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2883216922FA9EA200CC7AF4 /* NSString+TimeFormat.h */,
+				2883216A22FA9EA200CC7AF4 /* NSString+TimeFormat.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		28D4B91F22F1A78900EAC966 = {
 			isa = PBXGroup;
 			children = (
@@ -120,15 +411,11 @@
 		28D4B92A22F1A78900EAC966 /* WowFun */ = {
 			isa = PBXGroup;
 			children = (
-				28D4B92B22F1A78900EAC966 /* AppDelegate.h */,
-				28D4B92C22F1A78900EAC966 /* AppDelegate.m */,
-				28D4B92E22F1A78900EAC966 /* ViewController.h */,
-				28D4B92F22F1A78900EAC966 /* ViewController.m */,
+				28BD008622F81B9600980816 /* Classes */,
 				28D4B93122F1A78900EAC966 /* Main.storyboard */,
 				28D4B93722F1A78900EAC966 /* Assets.xcassets */,
 				28D4B93922F1A78900EAC966 /* LaunchScreen.storyboard */,
 				28D4B93C22F1A78900EAC966 /* Info.plist */,
-				28D4B93D22F1A78900EAC966 /* main.m */,
 				28D4B93422F1A78900EAC966 /* WowFun.xcdatamodeld */,
 			);
 			path = WowFun;
@@ -162,7 +449,6 @@
 				76C2BB9E007DFF152C94E0A9 /* Pods-WowFunUITests.debug.xcconfig */,
 				B781B5AD18C048FAF0048EC7 /* Pods-WowFunUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -242,6 +528,7 @@
 		28D4B92022F1A78900EAC966 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = QP;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = WowFun;
 				TargetAttributes = {
@@ -396,10 +683,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D4B93022F1A78900EAC966 /* ViewController.m in Sources */,
+				2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */,
+				28BD00A722F81B9600980816 /* main.m in Sources */,
+				2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */,
 				28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */,
-				28D4B93E22F1A78900EAC966 /* main.m in Sources */,
-				28D4B92D22F1A78900EAC966 /* AppDelegate.m in Sources */,
+				2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */,
+				2883215522FA60A700CC7AF4 /* QPHomeViewController.m in Sources */,
+				28BD00A822F81B9600980816 /* AppDelegate.m in Sources */,
+				2883215822FA60B700CC7AF4 /* QPVideoViewController.m in Sources */,
+				2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */,
+				2883215E22FA60E000CC7AF4 /* QPProfileViewController.m in Sources */,
+				2883215B22FA60D200CC7AF4 /* QPForumViewController.m in Sources */,
+				2883216122FA610F00CC7AF4 /* QPBaseTabBarController.m in Sources */,
+				2883216422FA62DD00CC7AF4 /* QPBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,13 +870,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E5A83P9AJ;
 				INFOPLIST_FILE = WowFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -592,13 +889,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E5A83P9AJ;
 				INFOPLIST_FILE = WowFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jackiequ.github.io.WowFun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
