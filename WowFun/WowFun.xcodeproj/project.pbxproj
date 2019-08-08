@@ -19,6 +19,7 @@
 		2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216A22FA9EA200CC7AF4 /* NSString+TimeFormat.m */; };
 		2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */; };
 		2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883217022FAD84800CC7AF4 /* QPTabBar.m */; };
+		2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218122FBF7C500CC7AF4 /* QPDockItem.m */; };
 		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
 		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
@@ -70,6 +71,8 @@
 		2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPBaseNavigationController.m; sourceTree = "<group>"; };
 		2883216F22FAD84800CC7AF4 /* QPTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPTabBar.h; sourceTree = "<group>"; };
 		2883217022FAD84800CC7AF4 /* QPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPTabBar.m; sourceTree = "<group>"; };
+		2883218022FBF7C500CC7AF4 /* QPDockItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPDockItem.h; sourceTree = "<group>"; };
+		2883218122FBF7C500CC7AF4 /* QPDockItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPDockItem.m; sourceTree = "<group>"; };
 		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 			children = (
 				2883216F22FAD84800CC7AF4 /* QPTabBar.h */,
 				2883217022FAD84800CC7AF4 /* QPTabBar.m */,
+				2883218022FBF7C500CC7AF4 /* QPDockItem.h */,
+				2883218122FBF7C500CC7AF4 /* QPDockItem.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -685,6 +690,7 @@
 			files = (
 				2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */,
 				28BD00A722F81B9600980816 /* main.m in Sources */,
+				2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */,
 				2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */,
 				28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */,
 				2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */,

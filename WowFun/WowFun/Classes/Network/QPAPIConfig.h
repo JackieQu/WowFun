@@ -13,7 +13,7 @@
 
 // 本地测试
 #define SERVER_HOST                     @"http://127.0.0.1:8000/"
-// 暂未注册
+// 暂未部署
 //#define SERVER_HOST                     @"https://www.wowfun.com/"
 
 // 留言板

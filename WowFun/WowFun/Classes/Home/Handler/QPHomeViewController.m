@@ -33,9 +33,10 @@
         _tableView.rowHeight = 60;
         
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
+        _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
+        
         _tableView.mj_header.ignoredScrollViewContentInsetTop = -44;
         _tableView.mj_header.automaticallyChangeAlpha = YES;
-        _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
         _tableView.mj_footer.automaticallyChangeAlpha = YES;
     }
     return _tableView;

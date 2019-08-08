@@ -7,12 +7,13 @@
 //
 
 #import "QPTabBar.h"
+#import "QPDockItem.h"
 
 @interface QPTabBar ()
 
 @property (nonatomic, strong) NSArray * dataList;
 
-@property (nonatomic, strong) UIButton * lastItem;
+@property (nonatomic, strong) QPDockItem * lastItem;
 
 @end
 
@@ -21,7 +22,7 @@
 - (NSArray *)dataList {
     
     if (!_dataList) {
-        _dataList = @[@"", @"", @"", @""];
+        _dataList = @[@"hot", @"video", @"forum", @"profile"];
     }
     return _dataList;
 }
@@ -31,19 +32,25 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.backgroundColor = [UIColor orangeColor];
+        self.backgroundColor = [UIColor whiteColor];
+        
+        NSArray * titles = @[@"首页", @"视频", @"论坛", @"我的"];
         
         for (NSInteger i = 0; i < self.dataList.count; i ++) {
             
-            UIButton * item = [UIButton buttonWithType:UIButtonTypeCustom];
+            QPDockItem * item = [QPDockItem buttonWithType:UIButtonTypeCustom];
             
-            item.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255) / 255.0f green:arc4random_uniform(255) / 255.0f blue:arc4random_uniform(255) / 255.0f alpha:arc4random_uniform(10) / 10.0f];
+//            item.backgroundColor = [UIColor colorWithRed:arc4random_uniform(200) / 255.0f green:arc4random_uniform(200) / 255.0f blue:arc4random_uniform(200) / 255.0f alpha:1];
+            item.backgroundColor = [UIColor whiteColor];
             
             item.adjustsImageWhenHighlighted = NO;
             
             [item setImage:[UIImage imageNamed:self.dataList[i]] forState:UIControlStateNormal];
             
             [item setImage:[UIImage imageNamed:[self.dataList[i] stringByAppendingString:@""]] forState:UIControlStateHighlighted];
+            
+            [item setTitle:titles[i] forState:UIControlStateNormal];
+            [item setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
             
             [item addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -77,7 +84,7 @@
     }
 }
 
-- (void)clickItem:(UIButton *)button {
+- (void)clickItem:(QPDockItem *)button {
  
     !self.block ? : self.block(self, button.tag);
     
@@ -89,15 +96,16 @@
     button.selected = YES;
     self.lastItem = button;
     
-    [UIView animateWithDuration:0.25 animations:^{
+    [UIView animateWithDuration:0.2 animations:^{
         
-        button.transform = CGAffineTransformMakeScale(1.25, 1.25);
+        button.imageView.transform = CGAffineTransformMakeScale(0.8, 0.8);
         
     } completion:^(BOOL finished) {
         
-        [UIView animateWithDuration:0.25 animations:^{
+        [UIView animateWithDuration:0.2 animations:^{
             
-            button.transform = CGAffineTransformIdentity;
+            button.imageView.transform = CGAffineTransformIdentity;
+            button.titleLabel.transform = CGAffineTransformIdentity;
         }];
     }];
 }
