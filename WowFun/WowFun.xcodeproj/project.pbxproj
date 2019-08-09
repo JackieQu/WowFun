@@ -20,6 +20,9 @@
 		2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883216D22FAD2CD00CC7AF4 /* QPBaseNavigationController.m */; };
 		2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883217022FAD84800CC7AF4 /* QPTabBar.m */; };
 		2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218122FBF7C500CC7AF4 /* QPDockItem.m */; };
+		2883218522FD565B00CC7AF4 /* QPJoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218422FD565B00CC7AF4 /* QPJoke.m */; };
+		2883218822FD5D2E00CC7AF4 /* QPJokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218722FD5D2E00CC7AF4 /* QPJokeCell.m */; };
+		2883218B22FD742300CC7AF4 /* QPJokeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218A22FD742300CC7AF4 /* QPJokeFrame.m */; };
 		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
 		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
@@ -51,7 +54,7 @@
 /* Begin PBXFileReference section */
 		1CA2ED97B69DD729F01C1F6D /* Pods_WowFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2883215322FA60A700CC7AF4 /* QPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QPHomeViewController.h; path = WowFun/Classes/Home/Handler/QPHomeViewController.h; sourceTree = SOURCE_ROOT; };
-		2883215422FA60A700CC7AF4 /* QPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QPHomeViewController.m; path = WowFun/Classes/Home/Handler/QPHomeViewController.m; sourceTree = SOURCE_ROOT; };
+		2883215422FA60A700CC7AF4 /* QPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QPHomeViewController.m; path = WowFun/Classes/Home/Handler/QPHomeViewController.m; sourceTree = SOURCE_ROOT; wrapsLines = 0; };
 		2883215622FA60B700CC7AF4 /* QPVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPVideoViewController.h; sourceTree = "<group>"; };
 		2883215722FA60B700CC7AF4 /* QPVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPVideoViewController.m; sourceTree = "<group>"; };
 		2883215922FA60D200CC7AF4 /* QPForumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPForumViewController.h; sourceTree = "<group>"; };
@@ -73,6 +76,12 @@
 		2883217022FAD84800CC7AF4 /* QPTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPTabBar.m; sourceTree = "<group>"; };
 		2883218022FBF7C500CC7AF4 /* QPDockItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPDockItem.h; sourceTree = "<group>"; };
 		2883218122FBF7C500CC7AF4 /* QPDockItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPDockItem.m; sourceTree = "<group>"; };
+		2883218322FD565B00CC7AF4 /* QPJoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJoke.h; sourceTree = "<group>"; };
+		2883218422FD565B00CC7AF4 /* QPJoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJoke.m; sourceTree = "<group>"; };
+		2883218622FD5D2E00CC7AF4 /* QPJokeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJokeCell.h; sourceTree = "<group>"; };
+		2883218722FD5D2E00CC7AF4 /* QPJokeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeCell.m; sourceTree = "<group>"; wrapsLines = 1; };
+		2883218922FD742300CC7AF4 /* QPJokeFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJokeFrame.h; sourceTree = "<group>"; };
+		2883218A22FD742300CC7AF4 /* QPJokeFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeFrame.m; sourceTree = "<group>"; };
 		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -172,6 +181,10 @@
 		28BD008A22F81B9600980816 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2883218322FD565B00CC7AF4 /* QPJoke.h */,
+				2883218422FD565B00CC7AF4 /* QPJoke.m */,
+				2883218922FD742300CC7AF4 /* QPJokeFrame.h */,
+				2883218A22FD742300CC7AF4 /* QPJokeFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +192,8 @@
 		28BD008B22F81B9600980816 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2883218622FD5D2E00CC7AF4 /* QPJokeCell.h */,
+				2883218722FD5D2E00CC7AF4 /* QPJokeCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -689,6 +704,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */,
+				2883218822FD5D2E00CC7AF4 /* QPJokeCell.m in Sources */,
 				28BD00A722F81B9600980816 /* main.m in Sources */,
 				2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */,
 				2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */,
@@ -699,6 +715,8 @@
 				2883215822FA60B700CC7AF4 /* QPVideoViewController.m in Sources */,
 				2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */,
 				2883215E22FA60E000CC7AF4 /* QPProfileViewController.m in Sources */,
+				2883218B22FD742300CC7AF4 /* QPJokeFrame.m in Sources */,
+				2883218522FD565B00CC7AF4 /* QPJoke.m in Sources */,
 				2883215B22FA60D200CC7AF4 /* QPForumViewController.m in Sources */,
 				2883216122FA610F00CC7AF4 /* QPBaseTabBarController.m in Sources */,
 				2883216422FA62DD00CC7AF4 /* QPBaseViewController.m in Sources */,

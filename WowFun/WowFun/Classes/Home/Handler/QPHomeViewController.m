@@ -13,6 +13,10 @@
 #import <MJRefresh/MJRefresh.h>
 #import <Masonry/Masonry.h>
 
+#import "QPJoke.h"
+#import "QPJokeCell.h"
+#import "QPJokeFrame.h"
+
 @interface QPHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView * tableView;
@@ -38,6 +42,8 @@
         _tableView.mj_header.ignoredScrollViewContentInsetTop = -44;
         _tableView.mj_header.automaticallyChangeAlpha = YES;
         _tableView.mj_footer.automaticallyChangeAlpha = YES;
+        
+        [_tableView registerClass:[QPJokeCell class] forCellReuseIdentifier:@"cellID"];
     }
     return _tableView;
 }
@@ -80,6 +86,36 @@
         
         self.dataList = [responseObject objectForKey:@"results"];
         
+        /* 测试数据 */
+        NSDictionary * jokeDick = @{@"nickname"      : @"我趣大橙子",
+                                    @"avatar"        : @"profile",
+                                    @"pk"            : @(10),
+                                    @"title"         : @"这是一个段子标题",
+                                    @"content"       : @"这是一个段子内容，这是一个段子内容，这是一个段子内容，这是一个段子内容，这是一个段子内容，这是一个段子内容。",
+                                    @"images"        : @"img1,img2,img3",
+                                    @"videos"        : @"video1,",
+                                    @"category"      : @"程序员",
+                                    @"countOfLike"   : @(123),
+                                    @"countOfDislike": @(10),
+                                    @"countOfComment": @(20),
+                                    @"countOfClick"  : @(2345)};
+        
+        NSMutableArray * jokes = [NSMutableArray array];
+        
+        for (NSInteger i = 0; i < 30; i ++) {
+            
+            QPJoke * joke = [[QPJoke alloc] init];
+            [joke setValuesForKeysWithDictionary:jokeDick];
+            
+            QPJokeFrame * jokeFrame = [[QPJokeFrame alloc] init];
+            jokeFrame.joke = joke;
+            
+            [jokes addObject:jokeFrame];
+        }
+        
+        self.dataList = jokes;
+        /* 测试数据 */
+        
         [self.tableView reloadData];
         
         [self.tableView.mj_header endRefreshing];
@@ -106,16 +142,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
  
+    /*
     UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
     
     NSDictionary * dict = self.dataList[indexPath.row];
-    NSString * responseTime = [dict valueForKey:@"created"];
-    NSString * dateTimeStr = [responseTime dateTimeStringFromResponseTime];
     
-    cell.textLabel.text = [dict valueForKey:@"code"];
-    cell.detailTextLabel.text = dateTimeStr; // [dateTimeStr timeIntervalStringFromTime];
+//    NSString * responseTime = [dict valueForKey:@"created"];
+//    NSString * dateTimeStr = [responseTime dateTimeStringFromResponseTime];
+//
+//    cell.textLabel.text = [dict valueForKey:@"code"];
+//    cell.detailTextLabel.text = dateTimeStr; // [dateTimeStr timeIntervalStringFromTime];
+    
+    cell.textLabel.text = [dict valueForKey:@"title"];
+    cell.detailTextLabel.text = [dict valueForKey:@"category"];
     
     return cell;
+     */
+    
+    QPJokeCell * jokeCell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+
+    jokeCell.jokeFrame = self.dataList[indexPath.row];
+    
+    return jokeCell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -125,6 +173,13 @@
     NSDictionary * dict = self.dataList[indexPath.row];
     
     NSLog(@"%@", dict);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    QPJokeFrame * jokeFrame = self.dataList[indexPath.row];
+    
+    return jokeFrame.cellHeight;
 }
 
 /*
