@@ -39,7 +39,6 @@
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadData)];
         _tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
         
-        _tableView.mj_header.ignoredScrollViewContentInsetTop = -44;
         _tableView.mj_header.automaticallyChangeAlpha = YES;
         _tableView.mj_footer.automaticallyChangeAlpha = YES;
         
@@ -74,18 +73,18 @@
 
 - (void)loadData {
     
-    [[QPHTTPClient sharedClient] requestWithPath:API_SNIPPET_LIST method:HTTPRequestGet params:nil prepare:^{
-        
-//        NSLog(@"prepare");
-        
-        self.tableView.mj_header.ignoredScrollViewContentInsetTop = 0;
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-       
-//        NSLog(@"success\n%@", responseObject);
-        
-        self.dataList = [responseObject objectForKey:@"results"];
-        
+//    [[QPHTTPClient sharedClient] requestWithPath:API_SNIPPET_LIST method:HTTPRequestGet params:nil prepare:^{
+//
+////        NSLog(@"prepare");
+//
+//        self.tableView.mj_header.ignoredScrollViewContentInsetTop = 0;
+//
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+//
+////        NSLog(@"success\n%@", responseObject);
+//
+//        self.dataList = [responseObject objectForKey:@"results"];
+    
         /* 测试数据 */
         NSDictionary * jokeDick = @{@"nickname"      : @"我趣大橙子",
                                     @"avatar"        : @"profile",
@@ -104,8 +103,11 @@
         
         for (NSInteger i = 0; i < 30; i ++) {
             
+            NSMutableDictionary * tmpDict = [[NSMutableDictionary alloc] initWithDictionary:jokeDick];
+            tmpDict[@"title"] = [NSString stringWithFormat:@"%@%ld", tmpDict[@"title"], i + 1];
+            
             QPJoke * joke = [[QPJoke alloc] init];
-            [joke setValuesForKeysWithDictionary:jokeDick];
+            [joke setValuesForKeysWithDictionary:tmpDict];
             
             QPJokeFrame * jokeFrame = [[QPJokeFrame alloc] init];
             jokeFrame.joke = joke;
@@ -121,13 +123,13 @@
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer resetNoMoreData];
 
-    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        
-//        NSLog(@"error\n%@", error);
-        
-        [self.tableView.mj_header endRefreshing];
-        [self.tableView.mj_footer endRefreshing];
-    }];
+//    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+//
+////        NSLog(@"error\n%@", error);
+//
+//        [self.tableView.mj_header endRefreshing];
+//        [self.tableView.mj_footer endRefreshing];
+//    }];
 }
 
 - (void)loadMoreData {

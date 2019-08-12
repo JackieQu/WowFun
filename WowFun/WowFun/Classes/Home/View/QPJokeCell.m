@@ -27,6 +27,8 @@
 @property (nonatomic, strong) UIButton * dislikeButton;
 @property (nonatomic, strong) UIButton * commentButton;
 
+@property (nonatomic, strong) UIView * buttomToolView;
+
 @end
 
 @implementation QPJokeCell
@@ -82,6 +84,16 @@
     return _contentLabel;
 }
 
+- (UIView *)buttomToolView {
+    
+    if (!_buttomToolView) {
+        
+        _buttomToolView = [[UIView alloc] init];
+        _buttomToolView.backgroundColor = [UIColor lightGrayColor];
+    }
+    return _buttomToolView;
+}
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -103,6 +115,8 @@
         [self.contentView addSubview:self.likeButton];
         [self.contentView addSubview:self.dislikeButton];
         [self.contentView addSubview:self.commentButton];
+        
+        [self.contentView addSubview:self.buttomToolView];
     }
     return self;
 }
@@ -122,6 +136,8 @@
     
     _contentLabel.text = jokeFrame.joke.content;
     _contentLabel.frame = jokeFrame.contentFrame;
+    
+    _buttomToolView.frame = jokeFrame.buttomToolView;
 }
 
 - (void)awakeFromNib {

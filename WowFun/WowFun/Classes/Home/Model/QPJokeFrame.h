@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGRect nicknameFrame;
 @property (nonatomic, assign) CGRect titleFrame;
 @property (nonatomic, assign) CGRect contentFrame;
+@property (nonatomic, assign) CGRect buttomToolView;
 
 @property (nonatomic, assign) CGFloat cellHeight;
 

@@ -37,7 +37,9 @@
     CGFloat contentH = [joke.content boundingRectWithSize:CGSizeMake(contentW, MAXFLOAT) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:fontDict context:nil].size.height;
     _contentFrame = CGRectMake(scaleMargin, contentY, contentW, contentH);
     
-    _cellHeight = CGRectGetMaxY(_contentFrame) + scaleMargin;
+    _buttomToolView = CGRectMake(0, CGRectGetMaxY(_contentFrame) + scaleMargin, SCREEN_WIDTH, 40);
+    
+    _cellHeight = CGRectGetMaxY(_buttomToolView) + scaleMargin;
 }
 
 @end
