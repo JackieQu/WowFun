@@ -7,6 +7,7 @@
 //
 
 #import "QPJokeCell.h"
+#import "QPButtomToolButton.h"
 
 @interface QPJokeCell ()
 
@@ -89,7 +90,28 @@
     if (!_buttomToolView) {
         
         _buttomToolView = [[UIView alloc] init];
-        _buttomToolView.backgroundColor = [UIColor lightGrayColor];
+//        _buttomToolView.backgroundColor = [UIColor lightGrayColor];
+        
+        NSInteger viewCount = 5;
+        CGFloat leftViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 2;
+        CGFloat rightViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 3;
+        NSArray * titleArray = @[@"100", @"100", @"收藏", @"分享", @"评论"];
+        NSArray * imageArray = @[@"praise", @"praise", @"like", @"share", @"comment"];
+        for (NSInteger i = 0; i < viewCount; i ++) {
+            QPButtomToolButton * btn = [QPButtomToolButton buttonWithType:UIButtonTypeCustom];
+            if (i == 0 || i == 1) {
+                btn.frame = CGRectMake(leftViewW * i + kMargin * SCALE, 0, leftViewW, 40);
+                [btn setTitle:titleArray[i] forState:UIControlStateNormal];
+                [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+            } else {
+                btn.frame = CGRectMake(rightViewW * (i - 2) + SCREEN_WIDTH / 2, 0, rightViewW, 40);
+            }
+
+            UIImage * image = [UIImage imageNamed:imageArray[i]];
+            [btn setImage:image forState:UIControlStateNormal];
+//            btn.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255) / 255.0f green:arc4random_uniform(255) / 255.0f blue:arc4random_uniform(255) / 255.0f alpha:1];
+            [_buttomToolView addSubview:btn];
+        }
     }
     return _buttomToolView;
 }
@@ -136,7 +158,7 @@
     
     _contentLabel.text = jokeFrame.joke.content;
     _contentLabel.frame = jokeFrame.contentFrame;
-    
+
     _buttomToolView.frame = jokeFrame.buttomToolView;
 }
 
