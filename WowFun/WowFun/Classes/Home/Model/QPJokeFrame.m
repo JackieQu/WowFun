@@ -37,6 +37,21 @@
     CGFloat contentH = [joke.content boundingRectWithSize:CGSizeMake(contentW, MAXFLOAT) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:fontDict context:nil].size.height;
     _contentFrame = CGRectMake(scaleMargin, contentY, contentW, contentH);
     
+    NSInteger viewCount = 5;
+    CGFloat leftViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 2;
+    CGFloat rightViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 3;
+    NSMutableArray * tmpArr = [NSMutableArray array];
+    for (NSInteger i = 0; i < viewCount; i ++) {
+        CGRect frame = CGRectZero;
+        if (i == 0 || i == 1) {
+            frame = CGRectMake(leftViewW * i + kMargin * SCALE, 0, leftViewW, 40);
+        } else {
+            frame = CGRectMake(rightViewW * (i - 2) + SCREEN_WIDTH / 2, 0, rightViewW, 40);
+        }
+        [tmpArr addObject:@(frame)];
+    }
+    _buttomToolBtnFrames = [NSArray arrayWithArray:tmpArr];
+        
     _buttomToolView = CGRectMake(0, CGRectGetMaxY(_contentFrame) + scaleMargin, SCREEN_WIDTH, 40);
     
     _cellHeight = CGRectGetMaxY(_buttomToolView) + scaleMargin;

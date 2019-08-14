@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QPJoke.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^ClickBlock)(QPJoke * joke);
 
 @interface QPButtomToolButton : UIButton
 
 @property (nonatomic, assign) BOOL haveTitle;
+
+@property (nonatomic, copy) ClickBlock clickBlock;
 
 @end
 

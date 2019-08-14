@@ -24,6 +24,8 @@
 		2883218822FD5D2E00CC7AF4 /* QPJokeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218722FD5D2E00CC7AF4 /* QPJokeCell.m */; };
 		2883218B22FD742300CC7AF4 /* QPJokeFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218A22FD742300CC7AF4 /* QPJokeFrame.m */; };
 		2883218E2302C48900CC7AF4 /* QPButtomToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218D2302C48900CC7AF4 /* QPButtomToolButton.m */; };
+		288321912303F55600CC7AF4 /* QPJokeButtomToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */; };
+		2883219B2304044F00CC7AF4 /* UIImage+RotateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */; };
 		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
 		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
@@ -85,6 +87,10 @@
 		2883218A22FD742300CC7AF4 /* QPJokeFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeFrame.m; sourceTree = "<group>"; };
 		2883218C2302C48900CC7AF4 /* QPButtomToolButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPButtomToolButton.h; sourceTree = "<group>"; };
 		2883218D2302C48900CC7AF4 /* QPButtomToolButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPButtomToolButton.m; sourceTree = "<group>"; };
+		2883218F2303F55600CC7AF4 /* QPJokeButtomToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJokeButtomToolView.h; sourceTree = "<group>"; };
+		288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeButtomToolView.m; sourceTree = "<group>"; };
+		288321992304044F00CC7AF4 /* UIImage+RotateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RotateImage.h"; sourceTree = "<group>"; };
+		2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RotateImage.m"; sourceTree = "<group>"; };
 		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				2883218722FD5D2E00CC7AF4 /* QPJokeCell.m */,
 				2883218C2302C48900CC7AF4 /* QPButtomToolButton.h */,
 				2883218D2302C48900CC7AF4 /* QPButtomToolButton.m */,
+				2883218F2303F55600CC7AF4 /* QPJokeButtomToolView.h */,
+				288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +415,8 @@
 			children = (
 				2883216922FA9EA200CC7AF4 /* NSString+TimeFormat.h */,
 				2883216A22FA9EA200CC7AF4 /* NSString+TimeFormat.m */,
+				288321992304044F00CC7AF4 /* UIImage+RotateImage.h */,
+				2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -710,6 +720,7 @@
 			files = (
 				2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */,
 				2883218822FD5D2E00CC7AF4 /* QPJokeCell.m in Sources */,
+				2883219B2304044F00CC7AF4 /* UIImage+RotateImage.m in Sources */,
 				28BD00A722F81B9600980816 /* main.m in Sources */,
 				2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */,
 				2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */,
@@ -717,6 +728,7 @@
 				2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */,
 				2883215522FA60A700CC7AF4 /* QPHomeViewController.m in Sources */,
 				28BD00A822F81B9600980816 /* AppDelegate.m in Sources */,
+				288321912303F55600CC7AF4 /* QPJokeButtomToolView.m in Sources */,
 				2883215822FA60B700CC7AF4 /* QPVideoViewController.m in Sources */,
 				2883216E22FAD2CD00CC7AF4 /* QPBaseNavigationController.m in Sources */,
 				2883215E22FA60E000CC7AF4 /* QPProfileViewController.m in Sources */,

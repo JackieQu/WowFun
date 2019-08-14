@@ -8,6 +8,7 @@
 
 #import "QPJokeCell.h"
 #import "QPButtomToolButton.h"
+#import "QPJokeButtomToolView.h"
 
 @interface QPJokeCell ()
 
@@ -28,7 +29,7 @@
 @property (nonatomic, strong) UIButton * dislikeButton;
 @property (nonatomic, strong) UIButton * commentButton;
 
-@property (nonatomic, strong) UIView * buttomToolView;
+@property (nonatomic, strong) QPJokeButtomToolView * buttomToolView;
 
 @end
 
@@ -52,8 +53,6 @@
         
         _nicknameLabel = [[UILabel alloc] init];
         _nicknameLabel.textColor = [UIColor orangeColor];
-        
-//        _nicknameLabel.backgroundColor = [UIColor redColor];
     }
     return _nicknameLabel;
 }
@@ -65,8 +64,6 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.font = [UIFont systemFontOfSize:kFontSize * SCALE];
-        
-//        _titleLabel.backgroundColor = [UIColor orangeColor];
     }
     return _titleLabel;
 }
@@ -79,8 +76,6 @@
         _contentLabel.textColor = [UIColor lightGrayColor];
         _contentLabel.numberOfLines = 0;
         _contentLabel.font = [UIFont systemFontOfSize:kFontSize * SCALE];
-        
-//        _contentLabel.backgroundColor = [UIColor yellowColor];
     }
     return _contentLabel;
 }
@@ -89,29 +84,28 @@
     
     if (!_buttomToolView) {
         
-        _buttomToolView = [[UIView alloc] init];
-//        _buttomToolView.backgroundColor = [UIColor lightGrayColor];
+        _buttomToolView = [[QPJokeButtomToolView alloc] init];
         
-        NSInteger viewCount = 5;
-        CGFloat leftViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 2;
-        CGFloat rightViewW = (SCREEN_WIDTH - kMargin * SCALE * 2) / 2 / 3;
-        NSArray * titleArray = @[@"100", @"100", @"收藏", @"分享", @"评论"];
-        NSArray * imageArray = @[@"praise", @"praise", @"like", @"share", @"comment"];
-        for (NSInteger i = 0; i < viewCount; i ++) {
-            QPButtomToolButton * btn = [QPButtomToolButton buttonWithType:UIButtonTypeCustom];
-            if (i == 0 || i == 1) {
-                btn.frame = CGRectMake(leftViewW * i + kMargin * SCALE, 0, leftViewW, 40);
-                [btn setTitle:titleArray[i] forState:UIControlStateNormal];
-                [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-            } else {
-                btn.frame = CGRectMake(rightViewW * (i - 2) + SCREEN_WIDTH / 2, 0, rightViewW, 40);
-            }
-
-            UIImage * image = [UIImage imageNamed:imageArray[i]];
-            [btn setImage:image forState:UIControlStateNormal];
-//            btn.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255) / 255.0f green:arc4random_uniform(255) / 255.0f blue:arc4random_uniform(255) / 255.0f alpha:1];
-            [_buttomToolView addSubview:btn];
-        }
+        __weak __typeof(self) weakSelf  = self;
+        _buttomToolView.praiseBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
+            NSLog(@"点赞: %@", joke.title);
+            __strong __typeof(self) strongSelf = weakSelf;
+            [strongSelf.buttomToolView.praiseBtn setTitle:@"test" forState:UIControlStateNormal];
+        };
+        _buttomToolView.dispraiseBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
+            __strong __typeof(self) strongSelf = weakSelf;
+            NSLog(@"我踩: %@", joke.title);
+            [strongSelf.buttomToolView.dispraiseBtn setTitle:@"test" forState:UIControlStateNormal];
+        };
+        _buttomToolView.collectBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
+            NSLog(@"收藏: %@", joke.title);
+        };
+        _buttomToolView.shareBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
+            NSLog(@"分享: %@", joke.title);
+        };
+        _buttomToolView.commentBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
+            NSLog(@"评论: %@", joke.title);
+        };
     }
     return _buttomToolView;
 }
@@ -159,6 +153,7 @@
     _contentLabel.text = jokeFrame.joke.content;
     _contentLabel.frame = jokeFrame.contentFrame;
 
+    _buttomToolView.jokeFrame = jokeFrame;
     _buttomToolView.frame = jokeFrame.buttomToolView;
 }
 

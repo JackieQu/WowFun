@@ -94,8 +94,8 @@
                                     @"images"        : @"img1,img2,img3",
                                     @"videos"        : @"video1,",
                                     @"category"      : @"程序员",
-                                    @"countOfLike"   : @(123),
-                                    @"countOfDislike": @(10),
+                                    @"countOfLike"   : @(54123),
+                                    @"countOfDislike": @(9876),
                                     @"countOfComment": @(20),
                                     @"countOfClick"  : @(2345)};
         
