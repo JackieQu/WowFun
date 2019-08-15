@@ -16,6 +16,7 @@
 #import "QPJoke.h"
 #import "QPJokeCell.h"
 #import "QPJokeFrame.h"
+#import "QPJokeDetailViewController.h"
 
 @interface QPHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -94,8 +95,8 @@
                                     @"images"        : @"img1,img2,img3",
                                     @"videos"        : @"video1,",
                                     @"category"      : @"程序员",
-                                    @"countOfLike"   : @(54123),
-                                    @"countOfDislike": @(9876),
+                                    @"countOfLike"   : @(54999),
+                                    @"countOfDislike": @(9899),
                                     @"countOfComment": @(20),
                                     @"countOfClick"  : @(2345)};
         
@@ -162,7 +163,7 @@
      */
     
     QPJokeCell * jokeCell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
-
+    
     jokeCell.jokeFrame = self.dataList[indexPath.row];
     
     return jokeCell;
@@ -172,9 +173,14 @@
  
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSDictionary * dict = self.dataList[indexPath.row];
     
-    NSLog(@"%@", dict);
+    QPJokeFrame * jokeFrame = self.dataList[indexPath.row];
+    QPJokeCell * jokeCell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    jokeCell.jokeFrame = jokeFrame;
+    
+    QPJokeDetailViewController * jokeDetailVC = [[QPJokeDetailViewController alloc] init];
+    jokeDetailVC.jokeCell = jokeCell;
+    [self.navigationController pushViewController:jokeDetailVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

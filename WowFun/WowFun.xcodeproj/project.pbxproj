@@ -26,6 +26,7 @@
 		2883218E2302C48900CC7AF4 /* QPButtomToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883218D2302C48900CC7AF4 /* QPButtomToolButton.m */; };
 		288321912303F55600CC7AF4 /* QPJokeButtomToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */; };
 		2883219B2304044F00CC7AF4 /* UIImage+RotateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */; };
+		288321A52304FEE800CC7AF4 /* QPJokeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321A42304FEE800CC7AF4 /* QPJokeDetailViewController.m */; };
 		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
 		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
@@ -91,6 +92,8 @@
 		288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeButtomToolView.m; sourceTree = "<group>"; };
 		288321992304044F00CC7AF4 /* UIImage+RotateImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RotateImage.h"; sourceTree = "<group>"; };
 		2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RotateImage.m"; sourceTree = "<group>"; };
+		288321A32304FEE800CC7AF4 /* QPJokeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJokeDetailViewController.h; sourceTree = "<group>"; };
+		288321A42304FEE800CC7AF4 /* QPJokeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeDetailViewController.m; sourceTree = "<group>"; };
 		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 			children = (
 				2883215322FA60A700CC7AF4 /* QPHomeViewController.h */,
 				2883215422FA60A700CC7AF4 /* QPHomeViewController.m */,
+				288321A32304FEE800CC7AF4 /* QPJokeDetailViewController.h */,
+				288321A42304FEE800CC7AF4 /* QPJokeDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -720,6 +725,7 @@
 			files = (
 				2883217122FAD84800CC7AF4 /* QPTabBar.m in Sources */,
 				2883218822FD5D2E00CC7AF4 /* QPJokeCell.m in Sources */,
+				288321A52304FEE800CC7AF4 /* QPJokeDetailViewController.m in Sources */,
 				2883219B2304044F00CC7AF4 /* UIImage+RotateImage.m in Sources */,
 				28BD00A722F81B9600980816 /* main.m in Sources */,
 				2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */,

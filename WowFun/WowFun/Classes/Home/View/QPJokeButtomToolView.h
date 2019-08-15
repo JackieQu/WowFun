@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) QPButtomToolButton * shareBtn;
 @property (nonatomic, strong) QPButtomToolButton * commentBtn;
 
++ (NSString *)getTitleWithCount:(NSInteger)count;
+
 @end
 
 NS_ASSUME_NONNULL_END

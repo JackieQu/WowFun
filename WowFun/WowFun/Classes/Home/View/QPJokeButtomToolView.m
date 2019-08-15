@@ -34,6 +34,8 @@
         
         _dispraiseBtn = [QPButtomToolButton buttonWithType:UIButtonTypeCustom];
         UIImage * dispraiseImage = [[UIImage imageNamed:@"praise"] rotateImageWithRadian:M_PI];
+//        UIImage * dispraiseImage = [UIImage imageNamed:@"praise"];
+//        dispraiseImage = [UIImage imageWithCGImage:dispraiseImage.CGImage scale:1 orientation:UIImageOrientationDownMirrored];
         [_dispraiseBtn setImage:dispraiseImage forState:UIControlStateNormal];
         [_dispraiseBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_dispraiseBtn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -93,11 +95,11 @@
  
     _jokeFrame = jokeFrame;
 
-    NSString * praiseBtnTitle = [self getTitleWithCount:jokeFrame.joke.countOfLike];
+    NSString * praiseBtnTitle = [self.class getTitleWithCount:jokeFrame.joke.countOfLike]; // [self getTitleWithCount:jokeFrame.joke.countOfLike];
     [_praiseBtn setTitle:praiseBtnTitle forState:UIControlStateNormal];
     _praiseBtn.frame = [jokeFrame.buttomToolBtnFrames[0] CGRectValue];
     
-    NSString * dipraiseBtnTitle = [self getTitleWithCount:jokeFrame.joke.countOfDislike];;
+    NSString * dipraiseBtnTitle = [self.class getTitleWithCount:jokeFrame.joke.countOfDislike]; // [self getTitleWithCount:jokeFrame.joke.countOfDislike];;
     [_dispraiseBtn setTitle:dipraiseBtnTitle forState:UIControlStateNormal];
     _dispraiseBtn.frame = [jokeFrame.buttomToolBtnFrames[1] CGRectValue];
     
@@ -108,26 +110,27 @@
     _commentBtn.frame = [jokeFrame.buttomToolBtnFrames[4] CGRectValue];
 }
 
-- (NSString *)getTitleWithCount:(NSInteger)count {
++ (NSString *)getTitleWithCount:(NSInteger)count {
  
     NSString * title = [NSString stringWithFormat:@"%ld", count];
-//    NSInteger pivotW = 10000;
-//    NSInteger pivotK = 1000;
-//    if (count >= pivotW) {
-//        title = [NSString stringWithFormat:@"%.1fw", count * 1.0 / pivotW];
-//    } else if (count >= pivotK) {
-//        title = [NSString stringWithFormat:@"%.1fk", count * 1.0 / pivotK];
-//    }
+    NSInteger pivotW = 10000;
+    NSInteger pivotK = 1000;
+    if (count >= pivotW) {
+        title = [NSString stringWithFormat:@"%.1fw", floor(count * 10.0 / pivotW) / 10];
+    } else if (count >= pivotK) {
+        title = [NSString stringWithFormat:@"%.1fk", floor(count * 10.0 / pivotK) / 10];
+    }
     return title;
 }
 
-- (void)clickAction:(id)sender {
+- (void)clickAction:(QPButtomToolButton *)btn {
     
-    QPButtomToolButton * btn = (QPButtomToolButton *)sender;
-    if (btn.haveTitle) {
-        NSInteger titleNum = [btn.titleLabel.text integerValue];
-        [btn setTitle:[NSString stringWithFormat:@"%ld",titleNum + 1] forState:UIControlStateNormal];
-    }
+    !btn.clickBlock ? : btn.clickBlock(_jokeFrame.joke);
+    
+//    if (btn.haveTitle) {
+//        NSInteger titleNum = [btn.titleLabel.text integerValue];
+//        [btn setTitle:[NSString stringWithFormat:@"%ld",titleNum + 1] forState:UIControlStateNormal];
+//    }
     
     [UIView animateWithDuration:0.2 animations:^{
         btn.imageView.transform = CGAffineTransformMakeScale(0.8, 0.8);
@@ -137,7 +140,7 @@
         }];
     }];
     
-    !btn.clickBlock ? : btn.clickBlock(_jokeFrame.joke);
+    
 }
 
 /*

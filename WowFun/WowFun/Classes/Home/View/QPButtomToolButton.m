@@ -18,7 +18,6 @@ static CGFloat kImageScale = 0.618;
     if (self) {
         
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-//        self.imageView.backgroundColor = [UIColor whiteColor];
         self.titleLabel.font = [UIFont systemFontOfSize:15];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.tintColor = [UIColor blackColor];

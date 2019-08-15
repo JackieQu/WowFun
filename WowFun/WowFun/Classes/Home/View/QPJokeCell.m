@@ -88,26 +88,55 @@
         
         __weak __typeof(self) weakSelf  = self;
         _buttomToolView.praiseBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
-            NSLog(@"点赞: %@", joke.title);
             __strong __typeof(self) strongSelf = weakSelf;
-            [strongSelf.buttomToolView.praiseBtn setTitle:@"test" forState:UIControlStateNormal];
+            [strongSelf praiseActionWithJoke:joke btn:strongSelf.buttomToolView.praiseBtn];
         };
         _buttomToolView.dispraiseBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
             __strong __typeof(self) strongSelf = weakSelf;
-            NSLog(@"我踩: %@", joke.title);
-            [strongSelf.buttomToolView.dispraiseBtn setTitle:@"test" forState:UIControlStateNormal];
+            [strongSelf dispraiseActionWithJoke:joke btn:strongSelf.buttomToolView.dispraiseBtn];
         };
         _buttomToolView.collectBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
-            NSLog(@"收藏: %@", joke.title);
+            __strong __typeof(self) strongSelf = weakSelf;
+            [strongSelf collectActionWithJoke:joke btn:strongSelf.buttomToolView.dispraiseBtn];
         };
         _buttomToolView.shareBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
-            NSLog(@"分享: %@", joke.title);
+            __strong __typeof(self) strongSelf = weakSelf;
+            [strongSelf shareActionWithJoke:joke btn:strongSelf.buttomToolView.dispraiseBtn];
         };
         _buttomToolView.commentBtn.clickBlock = ^(QPJoke * _Nonnull joke) {
-            NSLog(@"评论: %@", joke.title);
+            __strong __typeof(self) strongSelf = weakSelf;
+            [strongSelf commentActionWithJoke:joke btn:strongSelf.buttomToolView.dispraiseBtn];
         };
     }
     return _buttomToolView;
+}
+
+- (void)praiseActionWithJoke:(QPJoke *)joke btn:(QPButtomToolButton *)btn {
+    
+    NSLog(@"赞: %@", joke.title);
+    NSInteger titleNum = joke.countOfLike;
+    NSString * title = [QPJokeButtomToolView getTitleWithCount:titleNum + 1];
+    [btn setTitle:title forState:UIControlStateNormal];
+}
+
+- (void)dispraiseActionWithJoke:(QPJoke *)joke btn:(QPButtomToolButton *)btn {
+    
+    NSLog(@"踩: %@", joke.title);
+    NSInteger titleNum = joke.countOfDislike;
+    NSString * title = [QPJokeButtomToolView getTitleWithCount:titleNum + 1];
+    [btn setTitle:title forState:UIControlStateNormal];
+}
+
+- (void)collectActionWithJoke:(QPJoke *)joke btn:(QPButtomToolButton *)btn {
+    NSLog(@"收藏: %@", joke.title);
+}
+
+- (void)shareActionWithJoke:(QPJoke *)joke btn:(QPButtomToolButton *)btn {
+    NSLog(@"分享: %@", joke.title);
+}
+
+- (void)commentActionWithJoke:(QPJoke *)joke btn:(QPButtomToolButton *)btn {
+    NSLog(@"评论: %@", joke.title);
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
