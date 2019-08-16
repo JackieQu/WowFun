@@ -8,9 +8,11 @@
 
 #import "QPJokeDetailViewController.h"
 
-@interface QPJokeDetailViewController ()
+@interface QPJokeDetailViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITextField * commentField;
+
+@property (nonatomic, strong) UITableView * commentTableView;
 
 @end
 
@@ -35,6 +37,17 @@
     return _commentField;
 }
 
+- (UITableView *)commentTableView {
+ 
+    if (!_commentTableView) {
+        
+        _commentTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.jokeCell.contentView.frame), SCREEN_WIDTH, SCREEN_HEIGHT - CGRectGetMaxY(self.jokeCell.contentView.frame) - CGRectGetHeight(self.commentField.frame) - 44) style:UITableViewStylePlain];
+        _commentTableView.dataSource = self;
+        _commentTableView.delegate = self;
+    }
+    return _commentTableView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -53,6 +66,7 @@
     self.title = self.jokeCell.jokeFrame.joke.title;
     self.jokeCell.contentView.frame = CGRectMake(0, 88, SCREEN_WIDTH, self.jokeCell.jokeFrame.cellHeight);
     [self.view addSubview:self.jokeCell.contentView];
+    [self.view addSubview:self.commentTableView];
     [self.view addSubview:self.commentField];
 }
 
@@ -69,6 +83,27 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    cell.textLabel.text = @"test";
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+ 
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self.view endEditing:YES];
 }

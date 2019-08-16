@@ -22,7 +22,7 @@
 
 @property (nonatomic, strong) UITableView * tableView;
 
-@property (nonatomic, strong) NSArray * dataList;
+@property (nonatomic, strong) NSMutableArray * dataList;
 
 @end
 
@@ -48,11 +48,11 @@
     return _tableView;
 }
 
-- (NSArray *)dataList {
+- (NSMutableArray *)dataList {
     
     if (!_dataList) {
         
-        _dataList = [NSArray array];
+        _dataList = [NSMutableArray array];
     }
     return _dataList;
 }
@@ -116,13 +116,13 @@
             [jokes addObject:jokeFrame];
         }
         
-        self.dataList = jokes;
+        [self.dataList addObjectsFromArray:jokes];
         /* 测试数据 */
         
         [self.tableView reloadData];
         
-        [self.tableView.mj_header endRefreshing];
-        [self.tableView.mj_footer resetNoMoreData];
+//        [self.tableView.mj_header endRefreshing];
+//        [self.tableView.mj_footer resetNoMoreData];
 
 //    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
 //
@@ -135,7 +135,8 @@
 
 - (void)loadMoreData {
  
-     [self.tableView.mj_footer resetNoMoreData];
+    [self loadData];
+    [self.tableView.mj_footer endRefreshing];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
