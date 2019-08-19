@@ -121,8 +121,8 @@
         
         [self.tableView reloadData];
         
-//        [self.tableView.mj_header endRefreshing];
-//        [self.tableView.mj_footer resetNoMoreData];
+        [self.tableView.mj_header endRefreshing];
+        [self.tableView.mj_footer resetNoMoreData];
 
 //    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
 //

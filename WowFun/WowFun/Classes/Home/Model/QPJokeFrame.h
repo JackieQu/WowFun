@@ -10,10 +10,6 @@
 #import <UIKit/UIKit.h>
 #import "QPJoke.h"
 
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define SCALE SCREEN_WIDTH / 375.0f
-
 static const CGFloat kFontSize = 16;
 static const CGFloat kMargin = 10;
 static const CGFloat kAvatarW = 40;

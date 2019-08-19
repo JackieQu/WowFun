@@ -33,6 +33,10 @@
         [commentBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _commentField.rightView = commentBtn;
         _commentField.rightViewMode = UITextFieldViewModeAlways;
+        
+        UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10 * SCALE, 60)];
+        _commentField.leftView = leftView;
+        _commentField.leftViewMode = UITextFieldViewModeAlways;
     }
     return _commentField;
 }

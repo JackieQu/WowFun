@@ -27,6 +27,7 @@
 		288321912303F55600CC7AF4 /* QPJokeButtomToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321902303F55600CC7AF4 /* QPJokeButtomToolView.m */; };
 		2883219B2304044F00CC7AF4 /* UIImage+RotateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */; };
 		288321A52304FEE800CC7AF4 /* QPJokeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321A42304FEE800CC7AF4 /* QPJokeDetailViewController.m */; };
+		288321C1230A8F7500CC7AF4 /* QPVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 288321C0230A8F7500CC7AF4 /* QPVideoCell.m */; };
 		28BD00A722F81B9600980816 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009422F81B9600980816 /* main.m */; };
 		28BD00A822F81B9600980816 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BD009522F81B9600980816 /* AppDelegate.m */; };
 		28D4B93322F1A78900EAC966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D4B93122F1A78900EAC966 /* Main.storyboard */; };
@@ -94,6 +95,9 @@
 		2883219A2304044F00CC7AF4 /* UIImage+RotateImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RotateImage.m"; sourceTree = "<group>"; };
 		288321A32304FEE800CC7AF4 /* QPJokeDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPJokeDetailViewController.h; sourceTree = "<group>"; };
 		288321A42304FEE800CC7AF4 /* QPJokeDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPJokeDetailViewController.m; sourceTree = "<group>"; };
+		288321BF230A8F7500CC7AF4 /* QPVideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPVideoCell.h; sourceTree = "<group>"; };
+		288321C0230A8F7500CC7AF4 /* QPVideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QPVideoCell.m; sourceTree = "<group>"; };
+		288321C3230A959800CC7AF4 /* QPWowFun.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QPWowFun.pch; sourceTree = "<group>"; };
 		28BD009322F81B9600980816 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28BD009422F81B9600980816 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28BD009522F81B9600980816 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		28BD009022F81B9600980816 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				288321BF230A8F7500CC7AF4 /* QPVideoCell.h */,
+				288321C0230A8F7500CC7AF4 /* QPVideoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				28BD009422F81B9600980816 /* main.m */,
 				28BD009322F81B9600980816 /* AppDelegate.h */,
 				28BD009522F81B9600980816 /* AppDelegate.m */,
+				288321C3230A959800CC7AF4 /* QPWowFun.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -731,6 +738,7 @@
 				2883218222FBF7C500CC7AF4 /* QPDockItem.m in Sources */,
 				2883216822FA678600CC7AF4 /* QPHTTPClient.m in Sources */,
 				28D4B93622F1A78900EAC966 /* WowFun.xcdatamodeld in Sources */,
+				288321C1230A8F7500CC7AF4 /* QPVideoCell.m in Sources */,
 				2883216B22FA9EA200CC7AF4 /* NSString+TimeFormat.m in Sources */,
 				2883215522FA60A700CC7AF4 /* QPHomeViewController.m in Sources */,
 				28BD00A822F81B9600980816 /* AppDelegate.m in Sources */,
@@ -917,6 +925,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WowFun/Classes/Other/QPWowFun.pch";
 				INFOPLIST_FILE = WowFun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -936,6 +946,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E5A83P9AJ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WowFun/Classes/Other/QPWowFun.pch";
 				INFOPLIST_FILE = WowFun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
