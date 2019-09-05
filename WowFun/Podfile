@@ -13,6 +13,8 @@ target 'WowFun' do
   pod 'MJRefresh'
   pod 'MJExtension'
   pod 'SVProgressHUD'
+  pod 'RongCloudIM/IMLib'
+  pod 'RongCloudIM/IMKit'
 
   target 'WowFunTests' do
     inherit! :search_paths

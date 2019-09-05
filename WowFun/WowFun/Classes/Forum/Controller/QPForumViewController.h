@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "QPBaseViewController.h"
+#import <RongIMKit/RongIMKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QPForumViewController : QPBaseViewController
+@interface QPForumViewController : RCConversationListViewController
 
 @end
 
